@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+      /* Additional CSS styles */
+      
+      .change-color{
+        color:rgb(253, 244, 234);
+      }
+      .chng-color:hover{
+        color:#aa7457;
+      }
+      
+      
+      body {
+        font-family: 'Bradley Hand', cursive; /* Change this to your desired font family */
+    }
+
+      
+    </style>
+    
+</head>
+<body class="custom-navbar">
+  <!--navigation bar-->
+  <nav class="navbar navbar-expand-lg custom-navbar" style="background-color: black;">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        
+      </a>
+      <a class="navbar-brand text-light font-weight-bold change-color" href="#" data-aos= "fade-down" data-aos-duration="2000"> myPortfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            
+            <a class="nav-link active text-end px-lg-4 rounded change-color"data-aos= "fade-down" data-aos-duration="2000" aria-current="page" href="#aboutSection">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link change-color text-end px-lg-4 rounded chng-color" href="#certifications" data-aos= "fade-down" data-aos-duration="2000">Certifications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link change-color text-end px-lg-4 rounded chng-color" href="#projects" data-aos= "fade-down" data-aos-duration="2000">Projects</a>
+            
+          </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link change-color text-end px-lg-4 rounded chng-color" href="#achievement" data-aos= "fade-down" data-aos-duration="2000">Achievements</a>
+          
+        </li>
+          <li class="nav-item" >
+            <a class="nav-link change-color text-end px-lg-4 rounded chng-color" href="#contact" data-aos= "fade-down" data-aos-duration="2000">Contact</a>
+          </li>
+        
+        </ul>
+      
+      </div>
+    </div>
+  </nav>
+  <!--Main section start-->
+  <section class = "main py-5" style="background-color: black;">
+    <div class="container py-5">
+      <div class="row py-5">
+        <div class="col-lg-6 py-5 change-color" >
+          <small><p data-aos= "fade-up" data-aos-duration="2000">Hello, my name is</p></small><br>
+          <h3 data-aos= "fade-up" data-aos-duration="2000">Arnima Goel.</h3><br>
+          <h2 data-aos= "fade-up" data-aos-duration="2000" style="font-family: Chalkduster, fantasy;">I love exploring new things!</h2>
+          <br>
+          <p data-aos= "fade-up" data-aos-duration="2000">I'm a Final Year Computer Science Engineering Student <br>at <span style="color: #aa7457;">MIET, Meerut</span>. Primarily interested in <span style="color: #aa7457;">Web Development</span> <br>and <span style="color: #aa7457;">Android Development</span>.
+          I enjoy learning new skills <br>and implementing them in real life!<br></p>
+          
+          
+          <input onclick="openPDF()" type="button" value="Resume" data-aos= "fade-up" data-aos-duration="2000" class="bt1 mt-5 mr-3">
+          <input onclick="openMail()" type="button" data-aos= "fade-up" data-aos-duration="2000" value="Get In Touch" class="bt2 mt-5">
+        </div>
+      </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <!-- Vertical box containing icons -->
+        <div class="icon-box d-flex flex-column fixed-iconbox">
+          <!-- Icon 1 -->
+          <a href="https://www.instagram.com/arnima_goel?igsh=MzVveTEyeTFsdGRw" target="_blank">
+          <i class="fab fa-instagram" style="color:#aa7457"></i></a>
+          
+          <!-- Icon 2 -->
+          <a href="https://www.linkedin.com/in/arnima-goel-000357213?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+          <i class="fa-brands fa-linkedin" style="color:#aa7457"></i></a>
+          <!-- Icon 3 -->
+          <a href="mailto:arnima.goel.cse.2020@miet.ac.in">
+          <i class="fas fa-envelope" style="color:#aa7457"></i></a>
+          <a href="https://github.com/ARNIMAGOEL" target="_blank">
+          <i class="fa-brands fa-github" style="color:#aa7457"></i></a>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <section id="aboutSection" class="about py-5" style="background-color:#F4DECB; color: black;">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-lg-5">
+          <img src="about.png" data-aos="fade-right" class="custom-img2" data-aos-duration="2000" alt="" class="img-fluid">
+
+        </div>
+        <div class="col-lg-7">
+          <h1 data-aos="fade-left" data-aos-duration="2000">About Me</h1>
+          <p style="color: #aa7457;">WEB DEVELOPER AND ANDROID DEVELOPER</p>
+          <p class="py-3" data-aos="zoom-in" data-aos-duration="2000">I am <span class="font-weight-bold"> Arnima Goel </span>and I am currently persuing B.Tech from Meerut Institute of Engineering and Technology, Meerut. Throughout my graduation, I have gained knowledge in the domains like Problem Solving, Data Structures and Algorithms, Object Oriented Programming and so on. Coming to the programming languages, I know C, Python and Java. My short term goal is to get a job in a reputed organisation in order to enhance my skills and gain experience and my long term goal is to be the best in my field of work. My hobby is singing and exploring the world.<br>Having faith in myself, I believe that I will be achieving my goals soon. </p>
+          <input type="button" onclick="openPDF()" class="btn1 mt-5" value="Download CV" data-aos="zoom-in" data-aos-duration="2000">
+          <a href="#contact"><input type="button" class="btn2 mt-5" value="Contact Me" data-aos="zoom-in" data-aos-duration="2000"></a>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <section id="certifications" class="Certifications py-5" style="background-color:black;color: #aa7457;">
+    <div class="container py-5">
+      <h1 class="text-center pb-5" data-aos="zoom-in" data-aos-duration="2000" >Certifications</h1>
+      <div class="row pb-3">
+        <div class="col-lg-4 mb-3">
+          <div class="card text-center py-3" data-aos="fade-right" data-aos-duration="2000" style="background-color:#f7eade;">
+            <div class="card-body">
+              <div class="circle">
+                <span><i class="fa-brands fa-aws fa-lg"></i></span>
+              </div>
+              <h4 class="font-weight-bold pb-2" style="color: #aa7457;">AWS Academy Cloud Foundations</h4>
+              <p style="color: #aa7457;">This certification has equipped me with essential skills in cloud computing, including understanding core AWS services, security best practices, and more. Here is the <a href="https://www.credly.com/badges/2ea12082-c885-4ce5-9aec-21d63ca32266/print"><span style= "color:blue">link</span></a>for certificate.</p><br>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-3">
+          <div class="card text-center py-3" data-aos="fade-up" data-aos-duration="2000" style="background-color:#f7eade;">
+            <div class="card-body" >
+              <div class="circle">
+                <span><i class="fa-solid fa-user-ninja"></i></span>
+              </div>
+              <h4 class="font-weight-bold pb-2" style="color: #aa7457;">Coding Ninjas|Cammpus Ambassador</h4>
+              <p style="color: #aa7457;">I got the completion certificate <a href="cnintern.png"><span style="color:blue">(link)</span></a> for completing the internship as "Campus Ambassador" at Coding Ninjas, also got the Achiever's Pass <a href="achievement.png"><span style="color:blue">(link)</span></a> for making an achievement in the same organisation.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-3">
+          <div class="card text-center py-3" data-aos="fade-left" data-aos-duration="2000" style="background-color:#f7eade;">
+            <div class="card-body">
+              <div class="circle">
+                <span><i class="fa-solid fa-code"></i></i></span>
+              </div>
+              <h4 class="font-weight-bold pb-2" style="color: #aa7457;">MongoDB Java Developer Path</h4>
+              <p style="color: #aa7457;">Received MongoDB Java Developer Path certificate for completing the course. <a href="mongo.png"><span style="color:blue">Here</span></a> is the link.</p><br><br><br>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 mb-3">
+            <div class="card text-center py-3" data-aos="fade-right" data-aos-duration="2000" style="background-color:#f7eade;">
+              <div class="card-body">
+                <div class="circle">
+                  <span><i class="fa-brands fa-windows"></i></span>
+                </div>
+                <h4 class="font-weight-bold pb-2" style="color: #aa7457;">AZ-900 and AI-900 </h4>
+                <p style="color: #aa7457;">These certifications validate my foundational knowledge in Azure cloud services and artificial intelligence fundamentals.<br> Here are the links-<br><a href="https://www.credly.com/badges/d566ab21-6955-4752-ae08-90d3e85bc9b6/linked_in?t=ruznx4"><span style="color:blue">AZ-900</span></a><br><a href="https://www.credly.com/badges/80a54b62-e912-4985-9b66-34f61792ae0e/linked_in?t=rvm42u"><span style="color:blue">AI-900</span></a> </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-3">
+            <div class="card text-center py-3" data-aos="fade-up" data-aos-duration="2000" style="background-color:#f7eade;">
+              <div class="card-body">
+                <div class="circle">
+                  <span><i class="fa-solid fa-desktop"></i></span>
+                </div>
+                <h4 class="font-weight-bold pb-2" style="color: #aa7457;">TCS YEP</h4>
+                <p style="color: #aa7457;">Received certificate for completing the TCS YEP training. <a href=tcs.png><span style="color:blue">Here</span></a> is the link for certificate. </p><br><br><br><br>
+                </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-3">
+            <div class="card text-center py-3" data-aos="fade-left" data-aos-duration="2000" style="background-color:#f7eade;">
+              <div class="card-body">
+                <div class="circle">
+                  <span><i class="fa-brands fa-aws fa-lg"></i></span>
+                </div>
+                <h4 class="font-weight-bold pb-2" style="color: #aa7457;">AWS Academy Cloud Architecting</h4>
+                <p style="color: #aa7457;">This certification has honed my skills in designing scalable and resilient cloud solutions on AWS. Here is the <a href=architect.png><span style="color:blue">link</span></a> for certificate.</p><br><br>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="Projects py-5" style="background-color: #F4DECB;">
+    <div class="container py-5">
+      <h1 class="text-center">Projects</h1>
+      <div class="row p-5">
+        <div class="col-lg-5">
+          <img src="Healthcare.png" data-aos="fade-right" data-aos-duration="2000" alt="" class="img-fluid"> 
+        </div>
+        <div class="col-lg-7">
+          
+          <h5 style="color:#aa7457">1. 24*7 HEALTHCARE: Android App   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  (Dec 23-Apr 24)</h5>
+          <p class="py-3" data-aos="zoom-in" data-aos-duration="2000">A simple yet functional app designed to book appointment with doctor according to your needs and to order the medicines.<br><br>🔍 Key Features:<br>
+            Health Articles: Some tricks and tips to stay healthy.<br>
+            Find Doctor: Book appointment with specialised doctor as per your needs.<br>
+            Buy Medicine: Order the medicine as per your choice.
+            </p><br>GitHub Link 🤖 :<a href="https://github.com/ARNIMAGOEL/Healthcare" >https://github.com/ARNIMAGOEL/Healthcare</a>
+
+         
+        </div>
+
+      </div>
+      <div class="row p-5">
+        <div class="col-lg-7">
+          
+          <h5 style="color:#aa7457">2. Math Goodies   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Jan 23-Mar 23)</h5>
+          <p class="py-3" data-aos="zoom-in" data-aos-duration="2000">
+            It is a mathematical parameter solver tool! 🧮💡 Designed to simplify complex calculations, this tool handles a wide range of mathematical parameters with ease. From equations to statistical analysis, it's a go-to solution for mathematicians, engineers, and researchers. 📊✨<br>
+
+🔍 With an intuitive Swing GUI, users can input their data and get instant results, saving time and effort. Whether it's solving equations, performing statistical tests, or calculating age, this tool's got it covered. 💪📝<br>
+
+🌐 Built with Java's Swing framework, it offers a seamless user experience across platforms. It was an incredible learning journey, delving into GUI design, mathematical algorithms, and Java programming best practices.
+            </p><br>GitHub Link 🤖 :<a href="https://github.com/ARNIMAGOEL/mathgoodies.github.io" >https://github.com/ARNIMAGOEL/mathgoodies.github.io</a>
+
+        </div>
+        <div class="col-lg-5">
+          <img src="goodies.png" data-aos="fade-left" data-aos-duration="2000" alt="" class="img-fluid"> 
+          
+         
+        </div>
+
+      </div>
+      <div class="row p-5">
+        <div class="col-lg-5">
+          <img src="quiz.png" data-aos="fade-right" data-aos-duration="2000" alt="" class="img-fluid"> 
+        </div>
+        <div class="col-lg-7">
+          
+          <h5 style="color:#aa7457">3. Quiz-Wuiz   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  (Jun 22-Sep 22)</h5>
+          <p class="py-3" data-aos="zoom-in" data-aos-duration="2000"> 
+            A tool used for a short test of knowledge, typically around 5
+MCQs, also having correct answers given in the end. <br>Made
+using HTML, CSS and JS.</p><br>Website Link 🤖 :<a href="https://deepanshigarg23.github.io/Quiz-Wuiz/" >https://deepanshigarg23.github.io/Quiz-Wuiz/</a>
+
+         
+        </div>
+
+      </div>
+    </div>
+    
+  </section>
+
+  <div class="portfolio-modal modal fate mt-5" id="portfoliomodal" aria-hidden="true" role="dialog">
+    <div class="modal-doalog modal-md" role="document">
+      <div class="moadl-content text-center">
+        <div class="moadl-body text-center">
+          <div class="container-fluid py-3">
+            <div class="row justify-content-center">
+              <div class="col-lg-12">
+                <img src="badges.png" class="img-fluid rounded" alt="">
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+
+      </div>
+    
+    
+    <section id="achievement" class="blog p-5" style="background-color:black ;color:white" >
+      <div class="conatiner" style="background-color:black">
+        <h1 class="text-center" data-aos="zoom-in" data-aos-duration="2000" >Achievements</h1>
+        <div class="row p-5">
+          <div class="col-lg-4 mb-3">
+            <div class="card">
+              <img src="badges.png" class="img-fluid" alt="" class="card" data-aos="zoom-right" data-aos-duration="2000">
+              <small class="py-3 px-3 font-weight-bold" >Hackerrank</small>
+              <p class="font-weight-bold px-3"> Earned Gold Badges in Java, Python, SQL and
+                problem solving on Hackerrank.</p>
+              <a href="https://www.hackerrank.com/arnimagoel?badge=java&stars=5&level=3&hr_r=1&utm_campaign=social-buttons&utm_medium=linkedin&utm_source=badge_share&social=linkedin" class="font-weight-bold px-3 pb-4"><u>Link for Badges</u></a>
+            </div>
+          </div>
+        
+          <div class="col-lg-4 mb-3">
+            <div class="card" >
+              <img src="gfg.png" class="img-fluid" alt="" data-aos="zoom-up" data-aos-duration="2000">
+              <small class="py-3 px-3 font-weight-bold">GeeksForGeeks</small>
+              <p class="font-weight-bold px-3"> Made more than 200 days streak on GeeksForGeeks.</p>
+              <a href="https://www.geeksforgeeks.org/user/arnimagoel/" class="font-weight-bold px-3 pb-4"><u>Link</u></a>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-3">
+            <div class="card" >
+              <img src="topper2.png" class="img-fluid" alt="" data-aos="zoom-left" data-aos-duration="2000">
+              <small class="py-3 px-3 font-weight-bold" >District Topper</small>
+              <p class="font-weight-bold px-3" > Topped Meerut District with 5th rank in 10th class, also received award from Mr. Yogi Adityanath in Lucknow.</h5>
+              </p>
+              <a href="list.png" class="font-weight-bold px-3 pb-4" ><u>List</u></a>
+            </div>
+          
+    </section>
+  </div>
+  <secton id="contact" class="contact py-5" style="background-color: rgb(247, 229, 209)">
+    <div class="container py-5">
+      <h1 class="text-center" data-aos="zoom-in" data-aos-duration="2000" style="color: #aa7457;">Contact Me</h1>
+      <div class="row py-5">
+        <div class="col-lg-10 mx-auto">
+          <div class="row text-center">
+            <div class="col-lg-4" data-aos="fade-right" data-aos-duration="2000">
+              <div class="circle" >
+
+                <span><i class="fa-solid fa-location-dot" style="color: #aa7457;"></i></span>
+              </div>
+              <h5 style="color: #aa7457;">Address</h5>
+              <p style="color: #aa7457;">Akansha Kunj Colony, Phase 2, Mawana(Meerut)</p>
+            </div>
+            <div class="col-lg-4" data-aos="fade-up" data-aos-duration="2000">
+              <div class="circle">
+                <span><i class="fa-regular fa-envelope" style="color: #aa7457;"></i></span>
+
+              </div>
+              <h5 style="color: #aa7457;">Email</h5>
+              <p style="color: #aa7457;">arnima.goel.cse.2020@miet.ac.in</p>
+            </div>
+            <div class="col-lg-4" data-aos="fade-left" data-aos-duration="2000">
+              <div class="circle">
+                <span><i class="fa-solid fa-phone" style="color: #aa7457;"></i></span>
+
+              </div>
+              <h5 style="color: #aa7457;">Mobile</h5>
+              <p style="color: #aa7457;">(+91) 9999999999</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-9 mx-auto">
+          <form action="">
+            <div class="form-row">
+              <div class="col-lg-12">
+                <input type="text" class="form-control bg-light mb-3" placeholder="Name">
+
+              </div>
+              <div class="col-lg-12">
+                <input type="text" class="form-control bg-light mb-3" placeholder="Email" >
+                
+              
+            </div>
+            </div>
+            <div class="form-row">
+              <div class="col-lg-12">
+                <textarea name="" id="" class="form-control bg-light" placeholder="Message" cols="30" rows="10">Message
+                </textarea>
+              </div>
+            </div>
+            
+            <button class="btn3 my-4" data-aos="zoom-in" data-aos-duration="2000" >Submit</button>
+            
+          </form>
+        </div>
+      </div>
+    </div>
+  </secton>
+  <footer class="py-3 text-center"><p>Copy Rights 2024 By Arnima All Rights Reserved</p></footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+    <script>
+      function openPDF() {
+        window.open('Arnima Goel copy.pdf', '_blank');
+      }
+      function openMail(){
+        var recipientEmail = 'arnima.goel.cse.2020@miet.ac.in'; // Replace with the recipient's email address
+        var subject = 'Subject of the email'; // Replace with the subject of the email
+        var body = 'Body of the email'; // Replace with the body of the email
+        var mailtoLink = 'mailto:' + recipientEmail + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+      
+      // Open the default email client with the mailto link
+      window.open(mailtoLink);
+      }
+    </script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+</body>
+
+</html>
